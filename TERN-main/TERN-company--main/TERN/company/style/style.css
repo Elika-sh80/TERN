@@ -1,0 +1,985 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "PP Right Serif Mono Fine";
+}
+
+/* بخش header */
+header {
+    position: relative;
+    background: linear-gradient(90deg, #5d443f, #636949);
+    height: 600px;
+    width: 100%;
+}
+
+#menu {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1;
+    margin: 0px 30px;
+}
+
+#leftmenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+    padding: 15px;
+    background-color: white;
+    margin-top: 20px;
+    box-shadow: 0 0 1.25rem 0 rgba(0, 0, 0, .1);
+
+}
+
+#leftmenu img {
+    width: 20%;
+}
+
+#leftmenu a {
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    margin-left: 30px;
+    font-family: sans-serif;
+
+}
+
+#rightmenu {
+
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    background-color: white;
+    margin-top: 20px;
+    box-shadow: 0 0 1.25rem 0 rgba(0, 0, 0, .1);
+}
+
+#rightmenu p {
+    padding: 15px;
+    font-family: sans-serif;
+    color: #7e7e7e;
+}
+
+#rightmenu a {
+
+    padding: 15px;
+    text-decoration: none;
+    background-color: #74814d;
+    color: white;
+    font-family: sans-serif;
+
+}
+
+#textheader {
+    position: absolute;
+    color: white;
+    font-size: 46px;
+    padding: 100px;
+    bottom: 10px;
+    right: 10px;
+}
+
+#pheader {
+    color: white;
+    font-size: 15px;
+    margin-top: 30px;
+}
+
+
+section {
+    display: flex;
+    flex-direction: row;
+}
+
+/* section اول */
+#Mobility1 {
+    display: none;
+}
+
+#section1 {
+    display: flex;
+    flex-direction: row;
+    padding: 60px;
+    gap: 130px;
+}
+
+#section1 img {
+    width: 20%;
+    height: 20%;
+
+}
+
+#titelp {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+}
+
+#titelp h2 {
+    font-size: 49px;
+    line-height: 54px;
+    font-weight: lighter;
+}
+
+#titelp div {
+    font-size: 18px;
+    line-height: 29px;
+}
+
+/* section دوم مربوط به اطلاعات تیم شرکت */
+article {
+    display: none;
+}
+
+#team-container {
+    display: flex;
+    gap: 200px;
+    padding: 60px;
+}
+
+#team-img {
+    flex: 0 0 250px;
+}
+
+#team-img img {
+    width: 135%;
+    height: 400px;
+}
+
+#text {
+    display: block;
+    gap: 200px;
+}
+
+#text h3 {
+    font-size: 24px;
+    font-weight: lighter;
+    border-bottom: 2px solid #9f9f9f;
+    padding-bottom: 20px;
+}
+
+#subhead {
+    display: flex;
+    gap: 300px;
+    margin-top: 40px;
+}
+
+#team-info {
+    flex: 0 0 250px;
+    cursor: pointer;
+}
+
+
+.member h2 {
+    font-size: 33px;
+    font-weight: lighter;
+    margin-bottom: 10px;
+}
+
+.member p {
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+    color: #859163;
+}
+
+#team-bio {
+    font-size: 19px;
+    line-height: 27px;
+    color: rgb(30, 30, 30);
+}
+
+/* section سوم مربوط به اطلاعات هیت مدیره */
+article {
+    display: none;
+}
+
+#board-container {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 60px;
+    gap: 100px;
+    margin-top: 150px;
+}
+
+#board-img {
+    flex: 0 0 250px;
+}
+
+#board-img img {
+    width: 120%;
+    height: 400px;
+}
+
+#board-text {
+    display: block;
+    gap: 150px;
+}
+
+#board-text h3 {
+    font-size: 24px;
+    font-weight: lighter;
+    border-bottom: 2px solid #9f9f9f;
+    padding-bottom: 20px;
+}
+
+#board-subhead {
+    display: flex;
+    gap: 250px;
+    margin-top: 40px;
+}
+
+#boardmember-info {
+    flex: 0 0 280px;
+    cursor: pointer;
+}
+
+.board-member h2 {
+    font-size: 33px;
+    font-weight: lighter;
+    margin-bottom: 10px;
+}
+
+.board-member p {
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+    color: #859163;
+}
+
+#board-bio {
+    font-size: 19px;
+    line-height: 27px;
+    color: rgb(30, 30, 30);
+}
+
+/* section چهارم  */
+#awards {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 40px;
+    margin-top: 100px;
+
+}
+
+#gpspic {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    border-top: 1px solid #dedede;
+    padding-top: 200px;
+}
+
+#gpspic img {
+    width: 55%;
+    transform: translateY(-250px);
+}
+
+#topic {
+    border-top: 1px solid #dedede;
+    padding-top: 150px;
+}
+
+#topic h2 {
+    margin-bottom: 30px;
+    font-size: 23px;
+    font-weight: lighter;
+}
+
+#awardtext {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+#award-logo {
+    display: flex;
+    flex-direction: column;
+
+}
+
+#award-logo img {
+    background-color: rgb(237, 235, 235);
+    text-align: center;
+    width: 70px;
+    margin-bottom: 52px;
+    margin-right: 50px;
+    padding: 10px;
+}
+
+#awardname {
+    flex: 0 0 370px;
+}
+
+.name {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 55px;
+}
+
+.name h3 {
+
+    margin-bottom: 10px;
+}
+
+.name p {
+    color: #80964a;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* section بنجم */
+#intro-container {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: space-between;
+    margin: 40px;
+    margin-top: 100px;
+    border-top: 1px solid #dedede;
+    padding-top: 100px;
+}
+
+#titel5 {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+}
+
+#textintro h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: lighter;
+}
+
+#textintro h2 {
+    font-size: 38px;
+    font-weight: lighter;
+}
+
+#form-intro {
+    background: rgb(242, 242, 242);
+    padding: 25px;
+    border-radius: 10px;
+    width: 460px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+
+}
+
+#options {
+    display: flex;
+    border: none;
+    margin-bottom: 20px;
+
+}
+
+#options button {
+    background: rgb(242, 242, 242);
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #cacaca;
+    font-size: 15px;
+    cursor: pointer;
+    color: #474747;
+    font-family: 'Hanken Grotesk';
+    font-weight: 400;
+}
+
+#options button:hover {
+    background-color: #dedede;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    background: rgb(242, 242, 242);
+    width: 100%;
+    padding: 20px;
+    border: none;
+    border-bottom: 1px solid #b0afaf;
+    outline: none;
+    font-size: 18px;
+    margin-bottom: 25px;
+    font-family: 'Hanken Grotesk';
+    font-weight: 400;
+}
+
+label {
+    font-size: 18px;
+}
+
+textarea {
+    resize: vertical;
+    border: 1px solid #b0afaf;
+    min-height: 80px;
+}
+
+#submit-btn {
+    background-color: #74814d;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 20%;
+    cursor: pointer;
+    font-size: 13px;
+    float: right;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* بخش footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    gap: 100px;
+    background: linear-gradient(90deg, #5d443f, #636949);
+    height: 850px;
+    margin-top: 200px;
+}
+
+#ternlogo {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Hanken Grotesk';
+}
+
+#ternlogo img {
+    width: 50%;
+}
+
+#ternlogo p {
+    color: #d7d4d2;
+    font-family: 'Hanken Grotesk';
+    font-size: 14px;
+}
+
+#copyright {
+    margin-top: 40px;
+}
+
+#made-by {
+    transform: translateY(150px);
+}
+
+#made-by a {
+    color: #d7d4d2;
+    font-family: 'Hanken Grotesk';
+}
+
+#made {
+    display: none;
+}
+
+#boxes {
+    display: flex;
+    align-items: center;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin-left: 20px;
+    border-radius: 20px;
+    padding: 30px;
+    width: 450px;
+    height: 450px;
+}
+
+.box h3 {
+    font-size: medium;
+    align-items: start;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #bdbcbc;
+    padding-bottom: 20px;
+    font-weight: 300;
+
+    font-family: 'Hanken Grotesk';
+}
+
+.box p {
+    margin-top: 70px;
+    font-family: 'Hanken Grotesk';
+
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.links a {
+    font-size: 27px;
+    color: #111111;
+    text-decoration: none;
+    margin-top: 18px;
+    transition: transform 0.4s ease;
+}
+
+.links a:hover {
+    transform: translateX(30px);
+
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+}
+
+#channel {
+    border-bottom: 1px solid #bdbcbc;
+    padding-bottom: 10px;
+}
+
+#icons {
+    color: #919191;
+    font-size: 28px;
+    margin-top: 10px;
+}
+
+#icons i {
+    width: 22px;
+}
+
+#icons i:hover {
+    color: #111111;
+}
+
+#footerlogo {
+    display: flex;
+    margin-top: 70px;
+    margin-left: 20px;
+}
+
+#footerlogo span {
+    font-size: 14px;
+    margin-top: 20px;
+    color: #d7d4d2;
+    font-family: 'Hanken Grotesk';
+}
+
+#footerlogo img {
+    color: #7e7e7e;
+    margin-left: 20px;
+    width: 180px;
+    height: 50px;
+}
+
+
+@media(max-width:1200px) {
+
+    /* بخش منو */
+    #leftmenu,
+    #rightmenu {
+        width: 45%;
+    }
+
+    /* بخش اول */
+    #section1 {
+        margin-top: 50px;
+        padding: 20px;
+        gap: 80px;
+    }
+
+    #section1 img {
+        width: 300px;
+        height: 200px;
+    }
+
+    #section1 h2 {
+        font-size: 35px;
+        line-height: 45px;
+    }
+
+    /* بخش دوم */
+    #team-container {
+        display: flex;
+        margin-top: 100px;
+        gap: 100px;
+        padding: 20px;
+    }
+
+    #team-img img {
+        width: 100%;
+        height: 300px;
+    }
+
+    #subhead {
+        display: flex;
+        gap: 100px;
+
+    }
+
+    /* بخش سوم */
+    #board-container {
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 20px;
+        gap: 50px;
+        margin-top: 150px;
+    }
+
+    #board-img {
+        flex: 0 0 250px;
+    }
+
+    #board-img img {
+        width: 100%;
+        height: auto;
+    }
+
+
+    #board-subhead {
+        display: flex;
+        gap: 100px;
+        margin-top: 40px;
+    }
+
+    #boardmember-info {
+        flex: 0 0 220px;
+    }
+
+    /* بخش چهارم */
+    #awards {
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 20px;
+        margin-top: 100px;
+    }
+    /* بخش footer */
+    footer {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        height: 950px;
+        margin-top: 100px;
+    }
+
+    #ternlogo {
+        margin-top: 100px;
+    }
+
+    #ternlogo img {
+        width: 25%;
+    }
+
+
+    #made-by {
+        display: none;
+    }
+
+    #made a {
+        color: #d7d4d2;
+        font-family: 'Hanken Grotesk';
+
+    }
+
+    #made p {
+        font-size: 15px;
+    }
+
+    #made {
+        display: block;
+        color: #d7d4d2;
+        font-family: 'Hanken Grotesk';
+        transform: translateX(-100px);
+    }
+
+    #boxes {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 200px;
+    }
+
+    #footerlogo {
+        display: flex;
+        transform: translate(-20px, -30px);
+    }
+}
+
+@media(max-width:900px) {
+    #rightmenu {
+        width: 13%;
+        background-color: transparent;
+        margin-top: 20px;
+        box-shadow: 0 0 1.25rem 0 rgba(0, 0, 0, .1);
+    }
+
+    #rightmenu p {
+        display: none;
+    }
+
+    #titelp {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* بخش دوم */
+    #team-container {
+        display: none;
+    }
+
+    article {
+        display: block;
+        margin-top: 100px;
+        padding: 20px;
+    }
+
+    article h3 {
+        font-size: 24px;
+        font-weight: lighter;
+        border-bottom: 2px solid #e0dfdf;
+        padding-bottom: 20px;
+    }
+
+    .memberar {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        margin-top: 25px;
+        border-bottom: 2px solid #dbd9d9;
+        padding-bottom: 20px;
+    }
+
+    .memberar img {
+        width: 30%;
+
+    }
+
+    .memberar h2 {
+        font-size: 33px;
+        font-weight: lighter;
+        margin-bottom: 10px;
+    }
+
+    .memberar p {
+        font-size: 15px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        color: #859163;
+    }
+    #allname{
+        display: flex;
+        flex-direction: row;
+    }
+    #allname a{
+       text-decoration: none;
+       color: #474747;
+       font-size: 20px;
+       font-weight: 500;
+    
+    }
+   
+
+    /* بخش سوم */
+    #board-container {
+        display: none;
+    }
+
+    /* بخش پنجم */
+    #intro-container {
+        gap: 150px;
+    }
+
+    #titel5 {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    #textintro h3 {
+        font-size: 18px;
+    }
+
+    #textintro h2 {
+        font-size: 30px;
+        font-weight: lighter;
+    }
+    /* بخش footer */
+    .box {
+        width: 50%;
+    }
+
+    #footerlogo {
+        display: flex;
+        transform: translate(-40px, -30px);
+    }
+
+}
+
+@media(max-width:600px) {
+    #menu {
+        position: relative;
+
+    }
+
+    #leftmenu {
+        position: absolute;
+        position: fixed;
+        padding: 15px;
+        top: 0;
+        width: 90%;
+    }
+
+    #rightmenu a {
+        position: absolute;
+        text-align: center;
+        padding: 15px;
+        width: 90%;
+        align-items: center;
+        bottom: 0;
+        position: fixed;
+        z-index: 1;
+    }
+
+    #textheader {
+        width: 100%;
+        font-size: 40px;
+    }
+
+    #section1 {
+        display: none;
+    }
+
+    #Mobility1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #Mobilitytop {
+        display: flex;
+        flex-direction: row;
+        gap: 100px;
+
+    }
+
+    #Mobilitytop img {
+        width: 40%;
+        height: 30%;
+    }
+
+    #Mobilitytop h2 {
+        font-size: 30px;
+        line-height: 50px;
+        justify-content: center;
+        font-weight: lighter;
+        width: 45%;
+    }
+
+    #Mobilitybotten {
+        width: 100%;
+        font-size: 18px;
+        line-height: 29px;
+        margin-top: 30px;
+    }
+
+    /* بخش چهارم */
+    #awards {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        margin-top: 10px;
+    }
+
+    #gpspic {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        border: none;
+    }
+
+    #gpspic img {
+        width: 75%;
+    }
+
+    #topic {
+        border: none;
+        padding-top: 0px;
+    }
+
+    /* بخش بنجم */
+    #intro-container {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        justify-content: center;
+        padding: 1px;
+        border-top: 1px solid #dedede;
+        padding-top: 100px;
+    }
+
+    #textintro h3 {
+        font-size: 20px;
+        margin-bottom: 20px;
+        font-weight: lighter;
+    }
+
+    #textintro h2 {
+        font-size: 30px;
+        font-weight: lighter;
+    }
+
+    #form-intro {
+        width: 100%;
+    }
+    /* بخش footer */
+    footer {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    padding: 20px;
+    gap: 100px;
+    height: 1500px;
+    
+}
+
+#ternlogo img {
+    width: 50%;
+}
+
+
+
+#made a {
+        color: #d7d4d2;
+        font-family: 'Hanken Grotesk';
+
+    }
+
+    #made p {
+        font-size: 15px;
+    }
+
+    #made {
+        display: block;
+        color: #d7d4d2;
+        font-family: 'Hanken Grotesk';
+        text-align: center;
+        margin-bottom: 20px;
+        transform: translateX(5px);
+    }
+
+#boxes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin-left: 20px;
+    border-radius: 20px;
+    width: 100%;
+   
+}
+
+#footerlogo {
+    display: flex;
+    transform: translateY(-50px);  
+}
+}
