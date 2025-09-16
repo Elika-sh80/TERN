@@ -761,18 +761,7 @@ footer {
         letter-spacing: 2px;
         color: #859163;
     }
-    #allname{
-        display: flex;
-        flex-direction: row;
-    }
-    #allname a{
-       text-decoration: none;
-       color: #474747;
-       font-size: 20px;
-       font-weight: 500;
     
-    }
-   
 
     /* بخش سوم */
     #board-container {
